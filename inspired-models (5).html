@@ -10,17 +10,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap');
         
         * {
             font-family: 'Montserrat', sans-serif;
         }
         
-        /* Extra elaborate flowing script for homepage hero only */
-        .fancy-letter-hero {
-            font-family: 'Great Vibes', cursive;
-            font-size: 1.5em;
-            font-weight: 400;
+        /* Fancy italicized letters for I and M */
+        .fancy-letter {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3em;
+            font-weight: 600;
         }
         
         body {
@@ -253,7 +254,9 @@
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                   <div className="flex-shrink-0 cursor-pointer" onClick={() => setCurrentPage('home')}>
-                    <h1 className="text-2xl font-light tracking-wider">INSPIRED MODELS</h1>
+                    <h1 className="text-2xl font-light tracking-wider">
+                      <span className="fancy-letter">I</span>NSPIRED <span className="fancy-letter">M</span>ODELS
+                    </h1>
                   </div>
                   
                   {/* Desktop Navigation */}
@@ -368,7 +371,7 @@
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <div className="text-center text-white px-4">
                     <h1 className="text-5xl md:text-7xl font-light tracking-widest mb-6">
-                      <span className="fancy-letter-hero">I</span>NSPIRED <span className="fancy-letter-hero">M</span>ODELS
+                      <span className="fancy-letter">I</span>NSPIRED <span className="fancy-letter">M</span>ODELS
                     </h1>
                     <p className="text-xl md:text-2xl font-light tracking-wide mb-8">Discover Your Global Modelling Career</p>
                     <button 
@@ -658,16 +661,18 @@
           const AboutPage = () => (
             <div className="bg-white min-h-screen py-12">
               <div className="max-w-4xl mx-auto px-4">
-                <h2 className="text-4xl font-light text-center mb-16 tracking-wide">ABOUT INSPIRED MODELS</h2>
+                <h2 className="text-4xl font-light text-center mb-16 tracking-wide">
+                  ABOUT <span className="fancy-letter">I</span>NSPIRED <span className="fancy-letter">M</span>ODELS
+                </h2>
                 <div className="space-y-8 font-light text-gray-700 leading-relaxed">
                   <p className="text-lg">
-                    Inspired Models is a premier platform connecting aspiring models with global opportunities in the fashion and modeling industry. We believe every model has a unique story and style that deserves to be showcased to the world.
+                    <span className="fancy-letter">I</span>nspired <span className="fancy-letter">M</span>odels is a premier platform connecting aspiring models with global opportunities in the fashion and modeling industry. We believe every model has a unique story and style that deserves to be showcased to the world.
                   </p>
                   <p>
                     Our mission is to democratize access to the modeling world by providing a professional platform where models can showcase their portfolios and connect with leading agencies, photographers, and brands worldwide.
                   </p>
                   <p>
-                    Whether you're just starting your modeling journey or looking to expand your international reach, Inspired Models offers you the exposure and opportunities you need to succeed in this competitive industry.
+                    Whether you're just starting your modeling journey or looking to expand your international reach, <span className="fancy-letter">I</span>nspired <span className="fancy-letter">M</span>odels offers you the exposure and opportunities you need to succeed in this competitive industry.
                   </p>
                   <div className="pt-8">
                     <h3 className="text-2xl font-light mb-4 tracking-wide">WHY CHOOSE US</h3>
@@ -716,7 +721,9 @@
               <div className="max-w-7xl mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-8 mb-8">
                   <div>
-                    <h3 className="text-xl font-light tracking-wider mb-4">INSPIRED MODELS</h3>
+                    <h3 className="text-xl font-light tracking-wider mb-4">
+                      <span className="fancy-letter">I</span>NSPIRED <span className="fancy-letter">M</span>ODELS
+                    </h3>
                     <p className="text-gray-400 font-light text-sm">Connecting models with global opportunities</p>
                   </div>
                   <div>
@@ -736,7 +743,7 @@
                   </div>
                 </div>
                 <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm font-light">
-                  <p>© 2012 Inspired Models. All rights reserved.</p>
+                  <p>© 2012 <span className="fancy-letter">I</span>nspired <span className="fancy-letter">M</span>odels. All rights reserved.</p>
                 </div>
               </div>
             </footer>
